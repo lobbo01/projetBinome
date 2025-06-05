@@ -1,11 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Accueil - SIAO</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Site de presentaion du SIAO</h1>
+
+    <div class="typed-text-container">
+        <span id="typed-text"></span>
+    </div>
+
+
+  <header>
+    <nav class="navbar">
+        <div class="logo-title">
+            <img src="logo-siao.png" alt="Logo SIAO" class="logo">
+            <!--<h1>SIAO</h1>-->
+        </div>
+        <div class="menu-container">
+            <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Historique</a></li>
+            <!--<li><a href="#">Événements</a></li>-->
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="news-ticker">
+        <span class="label">News :</span>
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+            <span>📰 Le SIAO 2025 se tiendra du 25 octobre au 3 novembre !</span>
+            <span>🎉 Plus de 1000 artisans attendus cette année !</span>
+            <span>📍 Lieu : Parc des expositions de Ouagadougou</span>
+            </div>
+        </div>
+    </section>
+
+   
+  </header>
+
+  <main>
+    <section class="carousel-section appear">
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <img src="FOND-SIAO-BLEU.png" alt="Artisanat 1">
+          <div class="carousel-caption">
+            <h2>Découvrez l’artisanat du Burkina</h2>
+            <div class="carousel-buttons">
+              <button>Voir plus</button>
+              <button>Participer</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-slide slide-white">
+          <img src="FOND-SIAO-BLANC.png" alt="Artisanat 2">
+          <div class="carousel-caption">
+            <h2>Rencontrez les artisans du continent</h2>
+            <div class="carousel-buttons">
+              <button>Nos artisans</button>
+              <button>Galerie</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="FOND-SIAO-VERT.png" alt="Artisanat 3">
+          <div class="carousel-caption">
+            <h2>Rejoignez l'événement 2025</h2>
+            <div class="carousel-buttons">
+              <button>S’inscrire</button>
+              <button>Programme</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicateurs -->
+        <div class="carousel-indicators">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="green-section">
+      <div class="green-content">
+        <div class="text-content">
+          <h2>Un événement à ne pas manquer</h2>
+          <p>Rejoignez-nous au Salon International de l’Artisanat et découvrez la richesse des savoir-faire africains.</p>
+          <button class="blue-button">En savoir plus</button>
+        </div>
+        <div class="image-content">
+          <img src="african-woman.webp" alt="Artisanat" />
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section">
+      <div class="download-container">
+        <!-- Premier bloc -->
+        <div class="download-box">
+          <h2 class="section-title">Catalogue des artisans</h2>
+          <img src="catalogue.png" alt="Catalogue artisans" class="rounded-image">
+          <a href="catalogue-artisans.pdf" download class="blue-button">Télécharger</a>
+        </div>
+
+        <!-- Deuxième bloc -->
+        <div class="download-box">
+          <h2 class="section-title">Programme officiel</h2>
+          <img src="SIAO.png" alt="Programme officiel" class="rounded-image">
+          <a href="programme-officiel.pdf" download class="blue-button">Télécharger</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-overlay"></div>
+      <div class="cta-content">
+        <h2>Rejoignez le SIAO 2024</h2>
+        <p>Participez au plus grand rendez-vous de l’artisanat africain et connectez-vous à un réseau mondial d’opportunités.</p>
+        <div class="cta-buttons">
+          <button class="blue-button">S’inscrire</button>
+          <button class="blue-button">Voir le programme</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="double-image-section">
+      <div class="image-container left">
+        <img src="femme-noire.png" alt="Image gauche" />
+        <div class="overlay-content">
+          <h2>Préparez votre venue au SIAO</h2>
+          <div class="cta-buttons">
+            <button class="blue-button">Acheter un ticket</button>
+            <button class="blue-button">Acheter un badge</button>
+          </div>
+        </div>
+      </div>
+      <div class="image-container right">
+        <img src="sichiffre.png" alt="Image droite" />
+      </div>
+    </section>
+
+    <section class="pays-section">
+      <h2 class="section-title">Pays participants</h2>
+      <p class="section-description">
+        Le SIAO rassemble des délégations de nombreux pays africains et d'ailleurs, mettant en valeur la diversité et la richesse des savoir-faire artisanaux à travers le monde.
+      </p>
+
+      <div class="pays-container">
+        <!-- Pays 1 -->
+        <div class="pays-card">
+          <img src="ci.png" alt="Burkina Faso" class="pays-image">
+          <h3>Burkina Faso</h3>
+          <p>Berceau du SIAO, le Burkina Faso présente une large palette de créations artisanales traditionnelles et modernes.</p>
+          <button class="blue-button">En savoir plus</button>
+        </div>
+
+        <!-- Pays 2 -->
+        <div class="pays-card">
+          <img src="senegal.png" alt="Sénégal" class="pays-image">
+          <h3>Sénégal</h3>
+          <p>Représenté par ses artisans renommés, le Sénégal expose des produits de vannerie, de cuir et de textile d’exception.</p>
+          <button class="blue-button">En savoir plus</button>
+        </div>
+
+        <!-- Pays 3 -->
+        <div class="pays-card">
+          <img src="ghana.png" alt="Maroc" class="pays-image">
+          <h3>Maroc</h3>
+          <p>Avec son artisanat riche et raffiné, le Maroc offre un aperçu unique de l’art décoratif maghrébin au SIAO.</p>
+          <button class="blue-button">En savoir plus</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="actualite-section">
+      <h2 class="section-title">Actualité</h2>
+
+      <div class="actualite-container">
+        <div class="actualite-card">
+          <img src="amabassadeur.png" alt="Actualité 1" class="actualite-image">
+          <h3 class="actualite-titre">Lancement du programme international</h3>
+          <p class="actualite-date">5 Juin 2025</p>
+        </div>
+
+        <div class="actualite-card">
+          <img src="passa.png" alt="Actualité 2" class="actualite-image">
+          <h3 class="actualite-titre">Partenariat avec de nouveaux pays</h3>
+          <p class="actualite-date">2 Juin 2025</p>
+        </div>
+      </div>
+
+      <div class="actualite-button-container">
+        <a href="#" class="actualite-button">Lire plus</a>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Logo + description -->
+        <div class="footer-logo">
+        <img src="logo-siao.png" alt="Logo SIAO">
+        <p>Salon International de l’Artisanat de Ouagadougou</p>
+        </div>
+
+        <!-- Liens en colonnes -->
+        <div class="footer-links">
+        <div class="column">
+            <h4>À propos</h4>
+            <ul>
+            <li><a href="#">Notre mission</a></li>
+            <li><a href="#">Historique</a></li>
+            <li><a href="#">Équipe</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Événements</h4>
+            <ul>
+            <li><a href="#">Édition 2025</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Inscription</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <ul>
+            <li><a href="#">Nous écrire</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Plan d'accès</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    
+    <hr class="footer-divider">
+
+    
+    <div class="footer-bottom">
+        <p>© 2025 - Projet Académique SIAO</p>
+    </div>
+</footer>
+
+
+
+  
+<script>
+const elements = document.querySelectorAll('.appear');
+
+function showElements() {
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', showElements);
+window.addEventListener('load', showElements);
+
+
+
+const text = "Salon International de l’Artisanat de Ouagadougou";
+const typedText = document.getElementById("typed-text");
+
+let display = "";
+let index = 0;
+
+function formatTextWithColor(input) {
+  return input
+    .split("")
+    .map(char => {
+      if (char >= 'A' && char <= 'Z') {
+        return `<span style="color:green; font-weight:bold">${char}</span>`;
+      } else {
+        return `<span style="color:black; font-weight:bold">${char}</span>`;
+      }
+    })
+    .join("");
+}
+
+
+
+function typeEffectLoop() {
+  if (index <= text.length) {
+    display = text.substring(0, index);
+    typedText.innerHTML = formatTextWithColor(display);
+    index++;
+    setTimeout(typeEffectLoop, 100);
+  } else {
+    // Pause, puis reset
+    setTimeout(() => {
+      index = 0;
+      typedText.innerHTML = "";
+      typeEffectLoop();
+    }, 2000); // attend 2 secondes avant de recommencer
+  }
+}
+
+window.addEventListener('load', typeEffectLoop);
+
+const navbar = document.querySelector('.navbar');
+const navOffset = navbar.offsetTop;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= navOffset) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+});
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+  currentIndex = index;
+}
+
+// Clic sur les ronds
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    const index = parseInt(dot.getAttribute('data-index'));
+    showSlide(index);
+  });
+});
+
+// Défilement automatique
+setInterval(() => {
+  let nextIndex = (currentIndex + 1) % totalSlides;
+  showSlide(nextIndex);
+}, 4000);
+
+// Initialisation
+showSlide(currentIndex);
+
+
+</script>
+
+
+
+  
+
 </body>
 </html>
