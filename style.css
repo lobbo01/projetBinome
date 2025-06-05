@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 main {
-  padding-bottom: 100px; /* ou plus selon la hauteur de votre footer */
+  padding-bottom: 100px; 
 }
 
 
@@ -377,7 +377,7 @@ footer {
 }
 
 .green-section {
-  background-color: rgb(2, 92, 2); /* vert clair et vif */
+  background-color: rgb(2, 92, 2); 
   padding: 60px 20px;
   color: white;
 }
